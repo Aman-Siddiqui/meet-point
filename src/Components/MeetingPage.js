@@ -15,6 +15,8 @@ import { BiSolidTv } from "react-icons/bi";
 import { RiSettings2Fill } from "react-icons/ri";
 import { MdOutlineAddBox } from "react-icons/md";
 import { RiShieldKeyholeLine } from "react-icons/ri";
+import { BsThreeDotsVertical } from "react-icons/bs";
+
 
 const MeetingPage = () => {
   const participants = ["V", "V", "V", "V"];
@@ -41,6 +43,12 @@ const MeetingPage = () => {
               key={idx}
               className="relative bg-gray-800 h-64 rounded-lg flex items-center justify-center"
             >
+                <div className="absolute top-2 right-2 flex space-x-2">
+                <IoVideocamOff />
+                <BsMicMuteFill />
+                <BsThreeDotsVertical />
+
+                </div>
               <div className="text-xl font-semibold bg-green-500 w-12 h-12 flex items-center justify-center rounded-lg">
                 {participant}
               </div>
